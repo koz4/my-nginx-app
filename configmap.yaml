@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-html
+data:
+  index.html: |-
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Witaj w mojej aplikacji!</title>
+    <style>
+      body {
+        width: 35em;
+        margin: 0 auto;
+        font-family: Tahoma, Verdana, Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+      h1 {
+        color: #333;
+      }
+    </style>
+    </head>
+    <body>
+    <h1>Witaj w mojej aplikacji Nginx!</h1>
+    <p>Ta strona została wdrożona na OpenShift za pomocą Argo CD.</p>
+    <p>Gratulacje!</p>
+    </body>
+    </html>
